@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.List" %>
+<%@ page import="com.techpackservice.model.user.User" %><%--
   Created by IntelliJ IDEA.
   User: Asus
   Date: 3/3/2016
@@ -10,7 +11,14 @@
 <head>
     <title>TEST</title>
 </head>
-<body>
-TEST DONE
-</body>
+    <body>
+        All users
+        <%List<User> users = (List<User>) request.getAttribute("users");
+        for (User user : users) {
+        %>
+
+        <%=user%>
+
+        <%}%>
+    </body>
 </html>

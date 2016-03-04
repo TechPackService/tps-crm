@@ -1,23 +1,16 @@
 package com.techpackservice.model.user;
 
-import javax.persistence.*;
+import com.techpackservice.model.base.BaseEntity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     private String name;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
