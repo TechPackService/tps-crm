@@ -1,4 +1,4 @@
-package com.techpackservice.config;
+package com.techpackservice.crm.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.techpackservice.controller")
+@ComponentScan("com.techpackservice.crm.controller")
 public class WebConfig {
 
     @Bean

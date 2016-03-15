@@ -1,4 +1,4 @@
-package com.techpackservice.model.base;
+package com.techpackservice.crm.entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

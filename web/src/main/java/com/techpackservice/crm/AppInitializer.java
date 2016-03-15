@@ -1,13 +1,15 @@
-package com.techpackservice;
+package com.techpackservice.crm;
 
-import com.techpackservice.config.WebConfig;
+import com.techpackservice.crm.config.PersistenceConfig;
+import com.techpackservice.crm.config.ServiceConfig;
+import com.techpackservice.crm.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class<?>[]{
-                AppContext.class
+                PersistenceConfig.class, ServiceConfig.class
         };
     }
 
